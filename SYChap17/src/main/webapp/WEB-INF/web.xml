@@ -36,4 +36,18 @@ version="3.1">
 		<servlet-name>SimpleController</servlet-name>
 		<url-pattern>/simple</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControllerUsingFile</servlet-name>
+		<servlet-class>mvc.controller.ControllerUsingFile</servlet-class>
+		<init-param>
+			<param-name>configFile</param-name>
+			<param-value>/WEB-INF/commandHandler.properties</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllerUsingFile</servlet-name>
+		<url-pattern>/controllerUsingFile</url-pattern>
+	</servlet-mapping>
 </web-app>
