@@ -10,5 +10,9 @@
 	id 파라미터 : <%=request.getParameter("id")%><br>
 	name 파라미터 : <%=request.getParameter("name")%><br>
 	member 파라미터 : <%=request.getParameter("member")%><br>
+	
+	id 파라미터 : ${request.getParameter("id")}<br>
+	name 파라미터 : ${request.getParameter("name")}<br>
+	member 파라미터 : ${request.getParameter("member")}<br>
 </body>
 </html>
