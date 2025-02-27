@@ -64,4 +64,18 @@ version="3.1">
 		<servlet-name>ControllerUsingURI</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
+	
+	<filter>
+		<filter-name>NullParameter</filter-name>
+		<filter-class>filter.NullParameterFilter</filter-class>
+		<init-param>
+			<param-name>parameterNames</param-name>
+			<param-value>id,name</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>NullParameter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	
 </web-app>
